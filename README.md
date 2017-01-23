@@ -15,6 +15,6 @@ Notes on Game Design: The waves are emitted from the hit point of the raycast fr
 
 Note on sound design: The X and Y coordinates of the radio wave source also acts as parameters for frequencies of a Sin wave generated at the left and right audio output, like a double Theremin.
 
-Game design, development, art, sound design by Guney Ozsan.
+Game design, development, graphics and sound design by Guney Ozsan.
 
 Game born at Global Game Jam 2017.
