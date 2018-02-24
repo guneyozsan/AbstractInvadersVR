@@ -1,20 +1,37 @@
-# Abstract-Invaders-VR
+# Abstract Invaders VR
 
-Made during Global Game Jam 2017 at BAU BUG Game Lab site in Istanbul. This year's theme was "Waves".
+**Defend your Pyramid Planet from Invader Cubes coming from a mysterious space portal. Meanwhile listen to the soothing radio waves you generated.**
 
-Defend your pyramid shaped planet from Invader Cubes. Use your radio wave emitter to push them back. Don't let them get close to you, become red and invade your pyramid shaped planet. Meanwhile listen to the calming radio waves you generated.
+Made during [Global Game Jam 2017](https://globalgamejam.org/) at [BAU BUG Game Lab](http://buglab.bau.edu.tr/) site in Istanbul. This year's theme was "Waves".
 
-How to play:
+## How to play
 
-Put your (Gear VR, Cardboard, Oculus, HTC Vive) headset on.
-Invader Cubes are attacking from a portal marked with blue lines. Push back the Invader Cubes by hitting them with your radio waves
-Keep safe your pyramid shaped world standing at your back.
-Play with only look, no buttons. Green radio waves are emitted from the point you look through the portal.
-"Back" button or "Esc" key restarts the level.
-Notes on Game Design: The waves are emitted from the hit point of the raycast from camera on an invisible square plane in the beginning of the portal. The waves need to spread in parallel to the portal rather than an arc centered at the player, and also a turret-like feeling was not preferable and having a different starting point then the camera displays the wave formations better in perspective.
+### Controls
 
-Note on sound design: The X and Y coordinates of the radio wave source also acts as parameters for frequencies of a Sin wave generated at the left and right audio output, like a double Theremin.
+* Put your VR headset on (Gear VR, Cardboard, Oculus, HTC Vive).
+* Play only by looking around, no buttons to push. Green radio waves are emitted from the point you gaze at the portal gate throughout the portal.
+* `Back` button or `Esc` key restarts the level.
 
-Game design, development, graphics and sound design by Guney Ozsan.
+### Gameplay
 
-Game born at Global Game Jam 2017.
+* Keep your Pyramid Planet behind safe by preventing Invader Cubes from reaching the portal gate.
+* Use your Radio Wave Emitter to hit and drag Invader Cubes approaching from the portal marked with blue lines.
+* If Invader Cubes reach the portal gate they turn red which means they manage to pass your defenses and invade your Pyramid Planet (The less reds the better you are).
+
+## Notes on Implementation
+
+The radio wave emitter emit waves from where the player gazes at the portal gate throughout the portal tunnel. In order to implement this, an invisible raycast target plane is placed at the portal gate. Waves are emitted from where we gaze on this invisible raycast target. That point is determined by a raycast sent from player camera to the portal gate. This way the waves can be emitted throughout the portal rather than forming an arc of waves spreading all around the space centered at the player.
+
+One concern for this design decision was that a first-person-shooter/turret-like feeling was not preferable. Spreading waves throughout a tunnel gives a better visualization of waves which matches the game jam theme "Waves" better.
+
+Another concern was to create a better perception of perspective by spreading the waves throughout the portal tunnel resulting in a better immersive depth feeling for a VR game.
+
+## Notes on Sound Design
+
+In order to support the game jam theme "Waves", the X and Y coordinates of the radio wave source act as frequency multipliers for two separate Sin waves generated and sent to the left and right audio output each. Similar to two [Theremins](https://en.wikipedia.org/wiki/Theremin) each played by one of the X and Y coordinates.
+
+## Credits
+
+Game design, development, graphics and sound design by [Guney Ozsan](http://www.guneyozsan.com).
+
+Game born at [Global Game Jam 2017](https://globalgamejam.org/).
