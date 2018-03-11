@@ -30,6 +30,20 @@ Another concern was to create a better perception of perspective by spreading th
 
 In order to support the game jam theme "Waves", the X and Y coordinates of the radio wave source act as frequency multipliers for two separate Sin waves generated and sent to the left and right audio output each. Similar to two [Theremins](https://en.wikipedia.org/wiki/Theremin) each played by one of the X and Y coordinates.
 
+## License
+
+"Abstract Invaders" is a trademark of Guney Ozsan.
+
+Abstract Invaders VR - Defend your Pyramid Planet from Invader Cubes coming from a mysterious space portal.
+Copyright (C) 2018 Guney Ozsan
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 ## Credits
 
 Game design, development, graphics and sound design by [Guney Ozsan](http://www.guneyozsan.com).
