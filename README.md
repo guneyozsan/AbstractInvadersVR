@@ -1,3 +1,5 @@
+**NOTE:** Development of this game continues [here](https://github.com/postillusions/abstract-invaders-vr) at [Post Illusions](https://github.com/postillusions).
+
 # Abstract Invaders VR
 
 **Defend your Pyramid Planet from Invader Cubes coming from a mysterious space portal. Meanwhile listen to the soothing radio waves you generated.**
